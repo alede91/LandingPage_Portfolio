@@ -1,0 +1,382 @@
+/*Importa a fonte*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Lobster&family=Outfit:wght@400;700&family=Poppins:wght@100;200&display=swap');
+
+
+/*Zera as configurações dos browsers*/
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+/*Configura o body*/
+
+body {
+
+	width: 100vw;
+	height: auto;
+	background: rgb(0, 0, 0);
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+/*Configura o header com o menu*/
+
+header {
+
+	width: 100%;
+	height: 6em;
+	background: rgb(20, 20, 20);
+
+}
+
+/*Menu*/
+
+.navbar {
+
+	width: 100%;
+	height: 6em;
+	display: inline-flex;
+	justify-content: right;
+	align-items: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+/* Configura o estilo do menu */
+
+nav > ul > li {
+
+	display: inline-flex;
+	list-style: none;
+	font-size: 1em;
+	
+}
+
+#contact {
+
+	margin-right: 8em;
+
+}
+
+/*Configura os links do menu*/
+
+nav > ul > li > a {
+
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 1s;
+	
+}
+
+nav > ul > li > a:hover{
+
+	color: #03e9f4;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Apresentação*/
+
+.presentation {
+	width: 100%;
+	height: 35em;
+	display: flex;
+	background: rgb(20, 20, 20);
+
+}
+
+.presentation-son {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	
+
+}
+
+.presentation-text h1 {
+
+	color: rgb(255, 255, 255);
+	font-size: 3em;
+	margin: 0 0 1rem 4em;
+}
+
+.presentation-text p {
+
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	margin-left: 11em;
+
+}
+
+/*Foto*/
+
+.picture {
+	width: 50%;
+	height: 100%;
+	
+}
+
+/*Sobre mim*/
+
+.about{
+
+	width: 80%;
+	height: auto;
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	
+}
+
+.about h1 {
+	
+	margin-top: 2em;
+	font-size: 3em;
+	color: rgb(255, 255, 255);
+
+}
+
+.about p {
+	margin-top: 2em;
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+	text-align: justify;
+	
+
+	}
+
+/*Portifólio*/
+
+.portfolio-container {
+	
+	width: 100%;
+	height: auto;
+	background: rgb(20, 20, 20);
+	margin-top: 3em;
+	padding: 2em;
+	
+}
+
+.portfolio-text {
+
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 2em;
+	
+	
+}
+
+/*Configura duas linhas no portifólio e duas linhas nos skills*/
+
+.row1, .row2 {
+	
+	width: 100%;
+	height: 19em;
+	display: flex;
+	justify-content: center;
+	margin: 2em 0 2em;
+
+}
+
+.portfolio-cards-content {
+	
+	width: 15em;
+	height: 16.5em;
+	margin: 0 2em;
+	text-align: center;
+
+}
+
+.cards {
+
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	width: 15em;
+	height: 16.5em;
+
+
+}
+
+
+
+
+
+
+.portfolio-cards-content span{
+	color: rgb(255, 255, 255);
+	font-size: 1.3em;
+	text-transform: uppercase;
+
+}
+
+/*Skills*/
+
+.container-skills {
+
+	width: 80%;
+	margin-top: 3em;
+	height: 55em;
+
+
+}
+.container-skills h1{
+
+	color: rgb(255, 255, 255);
+	font-size: 4em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 1em 0em 1.3em 0em;
+
+}
+
+.circle{
+
+	width: 15em;
+	height: 15em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 7em;
+	border: 1em solid rgb(255, 255, 255);
+	border-radius: 50%;
+}
+.circle-content {
+
+	font-size: 3em;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*Rodapé*/
+
+footer {
+	
+	width: 100%;
+	height: 50em;
+	background: rgb(20, 20, 20);
+	padding-top: 2em;
+}
+
+/*Título da seção*/
+
+.contact-text{
+	color: rgb(255, 255, 255);
+	font-size: 1.7em;
+	margin: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*Div container para os links e os formulários*/
+
+.contact {
+	
+	width: 100%;
+	display: flex;
+
+}
+
+/*Lado esquerdo //// Links que direcionam para as redes*/
+
+.contact-links{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-links ul > li, a {
+	
+	color: white;
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin: 2em;
+	transition: 1s;
+
+}
+
+.contact-links ul > li, a:hover {
+	color: #03e9f4;
+}
+
+/*Lado direito //// Formulário de mensagem*/
+
+.contact-form{
+
+	width: 50%;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+#block {
+	display: block;
+}
+
+.form-text {
+	font-size: 1.5em;
+	margin-top: 1.8em;
+}
+
+.form-name, .form-email, .form-msg{
+	font-size: 1.2em;
+	margin-top: 1%;
+}
+
+.form-name input, .form-email input{
+	border: none;
+	background: transparent;
+	outline: none;
+	width: 25em;
+	margin: 1.2em 0 1.2em 0;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	
+}
+
+.form-msg textarea {
+	width: 25em;
+	height: 10em;
+	margin-top: 1.2em;
+	border: none;
+	outline: none;
+	border-radius: 0.7em;
+	
+}
+
+.form-submit {
+	width: 21em;
+	display: flex;
+	justify-content: right;
+	margin: 1.2em 0 1.2em 0;
+
+}
+
+.form-submit button {
+	width: 12em;
+	text-transform: uppercase;
+	border-radius: 2em;
+	border: none;
+}
+
+.form-submit button:hover{
+	background-color: #03e9f4;
+}
