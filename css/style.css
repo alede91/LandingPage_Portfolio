@@ -110,6 +110,22 @@ main {
 	color: rgb(255, 255, 255);
 	font-size: 3em;
 	margin: 0 0 1rem 4em;
+	position: relative;
+}
+
+.presentation-text h1:before {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 0px;
+	height: 1px;
+	background-color: #03e9f4;
+	transition: all 1.5s ease;
+}
+
+.presentation-text h1:hover:before{
+	width: 100%;
 }
 
 .presentation-text p {
@@ -161,13 +177,14 @@ main {
 
 /*Portifólio*/
 
-.portfolio-container {
+.portfolio {
 	
 	width: 100%;
 	height: auto;
 	background: rgb(20, 20, 20);
 	margin-top: 3em;
 	padding: 2em;
+	
 	
 }
 
@@ -180,49 +197,155 @@ main {
 	margin-top: 2em;
 	
 	
+	
 }
 
-/*Configura duas linhas no portifólio e duas linhas nos skills*/
+/*Inicia um grid-template dentro do portfólio*/
 
-.row1, .row2 {
-	
-	width: 100%;
+.container-portfolio{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template.rows: 19em 19em;
+	padding: 2em;
+	margin-top: 2em;
+	grid-row-gap: 3em;
+	justify-items: center;
+}
+
+.item1 {
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background: url("../img/config.svg") no-repeat center;
+	width: 75%;
 	height: 19em;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	margin: 2em 0 2em;
-
-}
-
-.portfolio-cards-content {
+	align-items: flex-end;
 	
-	width: 15em;
-	height: 16.5em;
-	margin: 0 2em;
-	text-align: center;
-
 }
 
-.cards {
+.item1 a {
 
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	width: 15em;
-	height: 16.5em;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 1px solid white;
+}
 
+.item2{
 
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background: url("../img/config.svg") no-repeat center;
+	width: 75%;
+	height: 19em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+}
+
+.item2 a {
+
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 1px solid white;
+}
+
+.item3{
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background: url("../img/config.svg") no-repeat center;
+	width: 75%;
+	height: 19em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+}
+
+.item3 a {
+
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 1px solid white;
+}
+
+.item4{
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background: url("../img/config.svg") no-repeat center;
+	width: 75%;
+	height: 19em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+}
+
+.item4 a {
+
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 1px solid white;
+}
+
+.item5{
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background: url("../img/config.svg") no-repeat center;
+	width: 75%;
+	height: 19em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+}
+
+.item5 a {
+
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 1px solid white;
+}
+
+.item6 {
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background: url("../img/config.svg") no-repeat center;
+	width: 75%;
+	height: 19em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+}
+
+.item6 a {
+
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 1px solid white;
 }
 
 
-
-
-
-
-.portfolio-cards-content span{
-	color: rgb(255, 255, 255);
-	font-size: 1.3em;
-	text-transform: uppercase;
-
-}
 
 /*Skills*/
 
@@ -244,23 +367,53 @@ main {
 
 }
 
-.circle{
+/*Configura duas linhas nos skills*/
+
+.row1, .row2 {
+	
+	width: 100%;
+	height: 19em;
+	display: flex;
+	justify-content: center;
+	margin: 2em 0 2em;
+
+}
+
+/*Configura os círculos*/
+
+.circle {
 
 	width: 15em;
 	height: 15em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-right: 7em;
-	border: 1em solid rgb(255, 255, 255);
+	border: 0.2em solid rgb(255, 255, 255);
 	border-radius: 50%;
+	transition: 1s;
 }
+
+.circle:hover {
+	border: 0.2em solid #03e9f4;
+}
+
 .circle-content {
 
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 3em;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	text-align: center;
+	transition: 1s;
+
+	
+}
+
+.circle-content:hover {
+	color: #03e9f4;
 }
 
 /*Rodapé*/
